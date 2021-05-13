@@ -1,6 +1,7 @@
 import bodyParser from 'body-parser';
 import Express from 'express';
 import session from 'express-session';
+import shrinkRay from 'shrink-ray-current';
 
 import { apiRouter } from './routes/api';
 import { staticRouter } from './routes/static';
@@ -17,6 +18,7 @@ app.use(
     secret: 'secret',
   }),
 );
+app.use(shrinkRay());
 app.use(bodyParser.json());
 app.use(bodyParser.raw({ limit: '10mb' }));
 
