@@ -20,7 +20,7 @@ const config = {
       '/api': 'http://localhost:3000',
     },
   },
-  devtool: 'inline-source-map',
+  devtool: false,
   entry: {
     main: [
       'core-js',
