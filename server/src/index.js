@@ -4,6 +4,8 @@ import { app } from './app';
 import { insertSeeds } from './seeds';
 import { sequelize } from './sequelize';
 
+const POST = 8080;
+
 async function main() {
   const server = http.createServer(app);
 
@@ -13,8 +15,7 @@ async function main() {
     logging: false,
   });
   await insertSeeds();
-
-  server.listen(Number(process.env.PORT || 3000), '0.0.0.0', () => {
+  server.listen(POST, () => {
     const address = server.address();
     console.log(`Listening on ${address.address}:${address.port}`);
   });
