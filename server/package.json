@@ -6,9 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "prestart": "npm-run-all prestart:clean prestart:init",
-    "start": "node dist/index.js",
-    "prestart:clean": "rimraf ../upload",
-    "prestart:init": "mkdirp ../upload/images ../upload/movies ../upload/sounds"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
