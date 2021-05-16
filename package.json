@@ -8,10 +8,13 @@
   "scripts": {
     "build": "yarn workspaces run build",
     "gcp-build": "yarn workspaces run build",
-    "start": "node ./server/dist/index.js"
+    "start": "yarn workspace @web-speed-hackathon-2021/server start"
   },
   "engines": {
     "node": "14.x.x",
     "yarn": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "yarn": "1.22.4"
   }
 }
