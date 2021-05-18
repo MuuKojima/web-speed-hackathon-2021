@@ -7,7 +7,7 @@ const webpack = require('webpack');
 
 const SRC_PATH = path.resolve(__dirname, './src');
 const PUBLIC_PATH = path.resolve(__dirname, '../public');
-const UPLOAD_PATH = path.resolve(__dirname, '../upload');
+const UPLOAD_PATH = path.resolve('/tmp/upload');
 const DIST_PATH = path.resolve(__dirname, '../dist');
 
 /** @type {import('webpack').Configuration} */
