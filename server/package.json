@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npm install && babel src --out-dir dist",
-    "prestart": "npm-run-all prestart:clean prestart:init",
     "start": "node dist/index.js"
   },
   "dependencies": {
