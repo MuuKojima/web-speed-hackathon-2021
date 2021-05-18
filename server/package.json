@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "npm install && babel src --out-dir dist",
     "prestart": "npm-run-all prestart:clean prestart:init",
     "start": "node dist/index.js"
   },
